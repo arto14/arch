@@ -1,0 +1,488 @@
+/* Reset dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(51, 51, 51, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('img/bangunan 1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px; /* Padding around footer */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+}
+
+.footer-container {
+    display: flex; /* Flexbox for footer content */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding around the footer */
+}
+
+.contact-info {
+    text-align: left; /* Align text to the left */
+    margin-right: 20px; /* Space to the right of contact info */
+}
+
+.nav-services {
+    text-align: right; /* Align text to the right */
+    margin-left: 20px; /* Space to the left of nav services */
+}
+
+.nav-services ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Change to flexbox */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.nav-services ul li {
+    display: block; /* Display items as block */
+    margin: 5px 0; /* Space between items */
+}
+
+footer a {
+    color: #c2b280; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.services {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-direction: row; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Warna latar belakang */
+    color: #fff;
+    padding: 40px; /* Ruang di dalam section */
+}
+
+.services-image {
+    flex: 1; /* Mengambil ruang 1 bagian dari flex */
+}
+
+.services-image img {
+    width: 100%; /* Gambar memenuhi ruang */
+    height: auto; /* Menjaga rasio aspek */
+}
+
+.services-content {
+    flex: 1; /* Mengambil ruang 1 bagian dari flex */
+    padding: 20px; /* Ruang di dalam konten */
+    margin-right: 20px; /* Space between the content and the image */
+}
+
+.services-content h2 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.services-content ul {
+    list-style: none; /* Menghilangkan bullet */
+    padding: 0; /* Menghilangkan padding */
+}
+
+.services-content ul li {
+    margin: 10px 0; /* Jarak antar item */
+}
+
+.info-button {
+    display: inline-block; /* Menjadikan tombol inline-block */
+    background-color: #c2b280; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    padding: 10px 20px; /* Ruang di dalam tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Sudut membulat */
+    margin-top: 20px; /* Jarak atas untuk tombol */
+}
+
+.features {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-around; /* Memisahkan item secara merata */
+    background-color: #333; /* Warna latar belakang */
+    color: #fff;
+    padding: 40px; /* Ruang di dalam section */
+}
+
+.feature {
+    text-align: center; /* Pusatkan teks */
+    flex: 1; /* Mengambil ruang yang sama */
+    margin: 0 20px; /* Jarak antar fitur */
+}
+
+.feature i {
+    color: #c2b280; /* Warna ikon */
+    margin-bottom: 10px; /* Jarak bawah untuk ikon */
+}
+
+h3 {
+    margin: 10px 0; /* Jarak atas dan bawah untuk judul */
+}
+
+.about {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    background-color: #333; /* Warna latar belakang */
+    color: #fff;
+    padding: 40px; /* Ruang di dalam section */
+}
+
+.about-content {
+    flex: 1; /* Mengambil ruang 1 bagian dari flex */
+    padding: 20px; /* Ruang di dalam konten */
+}
+
+.about-content h2 {
+    margin-bottom: 10px; /* Jarak bawah untuk judul */
+}
+
+.about-content h3 {
+    margin-bottom: 20px; /* Jarak bawah untuk subjudul */
+}
+
+.about-image {
+    flex: 1; /* Mengambil ruang 1 bagian dari flex */
+}
+
+.about-image img {
+    width: 100%; /* Gambar memenuhi ruang */
+    height: auto; /* Menjaga rasio aspek */
+}
+
+.projects {
+    background-color: #333; /* Warna latar belakang */
+    color: #fff;
+    padding: 40px; /* Ruang di dalam section */
+    text-align: center; /* Pusatkan teks */
+}
+
+.project-gallery {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-around; /* Memisahkan item secara merata */
+    flex-wrap: wrap; /* Membungkus item jika diperlukan */
+}
+
+.project-item {
+    flex: 1; /* Mengambil ruang yang sama */
+    margin: 10px; /* Jarak antar item */
+}
+
+.project-item img {
+    width: 100%; /* Gambar memenuhi ruang */
+    height: auto; /* Menjaga rasio aspek */
+    border-radius: 5px; /* Sudut membulat */
+}
+
+.testimonials {
+    background-color: #333; /* Warna latar belakang */
+    color: #fff;
+    padding: 40px; /* Ruang di dalam section */
+    text-align: center; /* Pusatkan teks */
+}
+
+.testimonial-container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-around; /* Memisahkan item secara merata */
+    flex-wrap: wrap; /* Membungkus item jika diperlukan */
+}
+
+.testimonial {
+    background-color: #c2b280; /* Warna latar belakang untuk testimoni */
+    color: #fff; /* Warna teks */
+    padding: 20px; /* Ruang di dalam testimoni */
+    margin: 10px; /* Jarak antar testimoni */
+    border-radius: 5px; /* Sudut membulat */
+    flex: 1; /* Mengambil ruang yang sama */
+    max-width: 300px; /* Lebar maksimum untuk setiap testimoni */
+}
+
+#contact {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px; /* Padding around the section */
+    text-align: center; /* Center the text */
+}
+
+.contact-details {
+    margin-bottom: 20px; /* Space below contact details */
+}
+
+.contact-details p {
+    margin: 10px 0; /* Space between contact details */
+}
+
+.contact-details i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+form {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+}
+
+form div {
+    margin-bottom: 15px; /* Space between form elements */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Maximum width */
+}
+
+input {
+    padding: 10px; /* Padding inside input fields */
+    width: 100%; /* Full width */
+}
+
+button {
+    background-color: #c2b280; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding inside button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* New styles for the footer form */
+.footer-form {
+    flex: 1; /* Allow the form to take available space */
+    text-align: center; /* Center the form content */
+    margin: 0 20px; /* Horizontal margin for spacing */
+}
+
+.footer-form form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+}
+
+.footer-form div {
+    margin-bottom: 15px; /* Space between form elements */
+    width: 100%; /* Full width */
+    max-width: 300px; /* Maximum width for form fields */
+}
+
+.footer-form input {
+    padding: 10px; /* Padding inside input fields */
+    width: 100%; /* Full width */
+    border: 1px solid #c2b280; /* Border color */
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.footer-form label {
+    color: #c2b280; /* Label color */
+    margin-bottom: 5px; /* Space below label */
+}
+
+.footer-form button {
+    background-color: #c2b280; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding inside button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Style for the name fields container */
+.name-fields {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the fields */
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Space below the name fields */
+}
+
+/* Style for individual name field divs */
+.name-fields div {
+    flex: 1; /* Allow fields to take equal space */
+    margin-right: 10px; /* Space between fields */
+}
+
+/* Remove margin from the last field */
+.name-fields div:last-child {
+    margin-right: 0; /* No margin on the last field */
+}
+
+/* Style for the email field to center it */
+.email-field {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 20px; /* Space below the email field */
+}
+
+/* Adjust margin for the email input */
+.email-field input {
+    margin-top: 5px; /* Space above the input */
+}
+
+/* Style for the contact fields container */
+.contact-fields {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the fields */
+    width: 100%; /* Full width */
+}
+
+/* Style for individual contact field divs */
+.contact-fields div {
+    flex: 1; /* Allow fields to take equal space */
+    margin-right: 10px; /* Space between fields */
+}
+
+/* Remove margin from the last field */
+.contact-fields div:last-child {
+    margin-right: 0; /* No margin on the last field */
+}
+
+/* Adjust spacing for individual sections */
+.footer-container > div {
+    margin-bottom: 20px; /* Space below each section */
+}
+
+/* Grid container for the sections */
+.grid-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+}
+
+/* Style for the about section */
+.about {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Style for the services section */
+.services {
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+}
+
+/* Style for the features section */
+.features {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+}
+
+/* Column container for the sections */
+.column-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px; /* Space between sections */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Style for the about section */
+.about {
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Space between content and image */
+}
+
+/* Style for the services section */
+.services {
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+}
+
+/* Style for the features section */
+.features {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+}
+
+/* Media query untuk perangkat dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Ubah arah flex menjadi kolom */
+        align-items: flex-start; /* Rata kiri */
+    }
+
+    nav ul {
+        flex-direction: column; /* Ubah menjadi kolom */
+        width: 100%; /* Lebar penuh */
+    }
+
+    .services, .about {
+        flex-direction: column; /* Ubah menjadi kolom */
+    }
+
+    .project-gallery {
+        flex-direction: column; /* Ubah menjadi kolom */
+    }
+
+    .testimonial-container {
+        flex-direction: column; /* Ubah menjadi kolom */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Ubah menjadi kolom */
+    }
+}
+
+/* Media query untuk perangkat dengan lebar maksimum 480px */
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 10px; /* Kurangi padding */
+    }
+
+    .services-content, .about-content {
+        padding: 10px; /* Kurangi padding */
+    }
+
+    .info-button, .footer-form button {
+        width: 100%; /* Tombol lebar penuh */
+    }
+}
